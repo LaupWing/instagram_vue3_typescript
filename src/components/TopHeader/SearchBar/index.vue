@@ -1,11 +1,11 @@
 <template>
-    <div className="max-w-xs">
-        <div className="mt-1 relative p-3 rounded-md">
-            <div className="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
+    <div class="max-w-xs">
+        <div class="mt-1 relative p-3 rounded-md">
+            <div class="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
                 <search-icon class="h-5 w-5 text-gray-500" />
             </div>
             <input
-                className="bg-gray-50 block w-full pl-10 sm:text-sm border border-gray-300 rounded-md focus:ring-black focus:border-black"
+                class="bg-gray-50 block w-full pl-10 sm:text-sm border border-gray-300 rounded-md focus:ring-black focus:border-black"
                 type="text"
                 placeholder="Search"
             />

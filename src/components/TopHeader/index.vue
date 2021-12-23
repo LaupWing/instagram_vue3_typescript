@@ -1,7 +1,9 @@
 <template>
-    <header class="flex">
-        <logo/>        
-        <search-bar/>
+    <header class="shadow-sm sticky border-b bg-white top-0 z-50">
+        <div class="flex justify-between max-w-6xl mx-5 lg:mx-auto">
+            <logo/>        
+            <search-bar/>
+        </div>
     </header>
 </template>
 
