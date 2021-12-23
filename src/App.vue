@@ -8,7 +8,7 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import TopHeader from "./components/TopHeader.vue";
+import TopHeader from "@/components/TopHeader/index.vue";
 
 export default defineComponent({
     components: {
