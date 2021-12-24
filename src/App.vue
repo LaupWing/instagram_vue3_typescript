@@ -1,10 +1,12 @@
 <template>
-    <top-header />
-    <div id="nav" class="bg-red-500">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+    <div class="h-screen overflow-y-scroll scrollbar-hide">
+        <top-header />
+        <!-- <div id="nav" class="bg-red-500">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link>
+        </div>
+        <router-view /> -->
     </div>
-    <router-view />
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
