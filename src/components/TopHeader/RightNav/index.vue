@@ -10,7 +10,7 @@
                 3
             </div>
         </div>
-        <plus-circle-icon/>
+        <plus-circle-icon class="navBtn"/>
         <user-group-icon class="navBtn" />
         <heart-icon class="navBtn" />
         <!-- <img
