@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import {DotsHorizontalIcon} from '@heroicons/vue/outline'
+import { DotsHorizontalIcon } from '@heroicons/vue/outline'
 
 export default defineComponent({
    components:{

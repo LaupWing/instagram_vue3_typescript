@@ -6,14 +6,7 @@
          alt="image"
          class='object-cover w-full'
       />
-      <div class='flex justify-between px-4 pt-4'>
-         <div class='flex space-x-4'>
-            <HeartIcon class='btn' />
-            <ChatIcon class='btn' />
-            <PaperAirplaneIcon class='btn' />
-         </div>
-         <BookmarkIcon class='btn' />
-      </div>
+      <!-- Actions -->
       <p class='p-5 truncate'>
          <span class='font-bold mr-1'>Laupwing </span> caption
       </p>
