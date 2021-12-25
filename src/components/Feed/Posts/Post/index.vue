@@ -22,31 +22,23 @@
          ))} -->
       </div>
 
-      <form class='flex items-center p-4'>
-         <EmojiHappyIcon class='h-7' />
-         <input
-            placeholder='Add a comment...'
-            class='border-none flex-1 focus:ring-0'
-         />
-         <button
-            type='submit'
-            class='font-semibold text-blue-400'
-         >
-            Post
-         </button>
-      </form>
+      <add-comment/>
    </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Owner from './Owner/index.vue'
 import Actions from './Actions/index.vue'
+import Comment from './Comment/index.vue'
+import AddComment from './AddComment/index.vue'
 
 export default defineComponent({
    name: 'Post',
    components:{
       Owner,
-      Actions
+      AddComment,
+      Actions,
+      Comment
    }
 })
 </script>
