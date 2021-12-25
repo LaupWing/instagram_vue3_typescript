@@ -13,16 +13,20 @@
       </section>
       <section class="hidden xl:inline-grid md:col-span-1">
          <div class="fixed top-20">
-            <!-- <MiniProfile/>
-                  <Suggestions/> -->
+            <MiniProfile/>
+            <Suggestions/>
          </div>
       </section>
    </main>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
+import MiniProfile from './MiniProfile/index.vue'
 
 export default defineComponent({
    name: "Feed",
+   components:{
+      MiniProfile
+   }
 });
 </script>
