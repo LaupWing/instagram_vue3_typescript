@@ -13,7 +13,7 @@
       </section>
       <section class="hidden xl:inline-grid md:col-span-1">
          <div class="fixed top-20">
-            <MiniProfile/>
+            <mini-profile/>
             <!-- <Suggestions/> -->
          </div>
       </section>
