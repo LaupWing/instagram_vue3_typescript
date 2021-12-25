@@ -6,7 +6,7 @@
          alt="image"
          class='object-cover w-full'
       />
-      <!-- Actions -->
+      <actions/>
       <p class='p-5 truncate'>
          <span class='font-bold mr-1'>Laupwing </span> caption
       </p>
@@ -40,11 +40,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Owner from './Owner/index.vue'
+import Actions from './Actions/index.vue'
 
 export default defineComponent({
    name: 'Post',
    components:{
-      Owner
+      Owner,
+      Actions
    }
 })
 </script>
