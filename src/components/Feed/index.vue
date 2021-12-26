@@ -8,8 +8,8 @@
       "
    >
       <section class="col-span-2">
-         <!-- <Stories/>
-            <Posts/> -->
+         <!-- <Stories/> -->
+         <Posts/>
       </section>
       <section class="hidden xl:inline-grid md:col-span-1">
          <div class="fixed top-20">
@@ -22,11 +22,13 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import MiniProfile from './MiniProfile/index.vue'
+import Posts from './Posts/index.vue'
 
 export default defineComponent({
    name: "Feed",
    components:{
-      MiniProfile
+      MiniProfile,
+      Posts
    }
 });
 </script>
