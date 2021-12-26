@@ -4,10 +4,12 @@
          :img="'https://autototaalbv.nl/wp-content/uploads/2017/04/profile-placeholder.png'"
          :username="'LaupWing'"
       />
-      <!-- <story
-         img={profile.avatar}
-         username={profile.username}
-      /> -->
+      <story
+         v-for="(story,i) in stories"
+         :key="i"
+         :img="story.avatar"
+         :username="story.username"
+      />
    </div>
 </template>
 
@@ -29,10 +31,9 @@ export default defineComponent({
       }
       init()
 
-      
-      // const getStores = await faker(20)
-      // const stories = ref([])
-      
+      return {
+         stories
+      }
    },
 })
 </script>
