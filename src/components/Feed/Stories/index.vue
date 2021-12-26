@@ -22,9 +22,13 @@ export default defineComponent({
       Story
    },
    async setup() {
+      const stories = ref<FakerObject[]>([]) 
+
       const init = async ()=>{
-         const stories:FakerObject[] = await faker(20)
-         // console.log()
+         const data:FakerObject[] = await faker(20)
+         stories.value = data
+         console.log(stories.value)
+         console.log(stories)
       }
       init()
       // const getStores = await faker(20)
