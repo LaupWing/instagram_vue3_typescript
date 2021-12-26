@@ -1,6 +1,6 @@
 import faker from 'faker'
 
-module.exports =  async (total)=>{
+export default async (total)=>{
    const suggestions = [...Array(total)].map((_, i)=>({
       ...faker.helpers.contextualCard(),
       id: i
