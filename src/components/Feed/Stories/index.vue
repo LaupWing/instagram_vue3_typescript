@@ -13,7 +13,6 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-// @ts-ignore
 import faker from '@/helpers'
 
 export default defineComponent({
