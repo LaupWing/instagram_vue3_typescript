@@ -10,7 +10,7 @@
       <p class='p-5 truncate'>
          <span class='font-bold mr-1'>Laupwing </span> caption
       </p>
-      <div class='ml-10 h-20 overflow-y-scroll scrollbar-track-black scrollbar-thin'>
+      <!-- <div class='ml-10 h-20 overflow-y-scroll scrollbar-track-black scrollbar-thin'> -->
          <!-- {comments.map(comment => (
             <div key={comment.id} class='flex items-center space-x-2 mb-3'>
                <img class='h-7 rounded-full' src={comment.data().userImage} alt="user image" />
@@ -20,7 +20,7 @@
                </Moment>
             </div>
          ))} -->
-      </div>
+      <!-- </div> -->
 
       <add-comment/>
    </div>
