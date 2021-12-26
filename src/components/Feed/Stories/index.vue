@@ -13,12 +13,15 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-// import faker from '@/'
+import faker from '../../../helpers/test.js'
 
 export default defineComponent({
-   setup() {
+   async setup() {
+      console.log(faker)
+      // const getStores = await faker(20)
+      // console.log(getStores)
       const stories = ref([])
-
+      
    },
 })
 </script>
