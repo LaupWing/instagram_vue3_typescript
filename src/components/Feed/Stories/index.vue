@@ -19,7 +19,6 @@ export default defineComponent({
    async setup() {
       const test = async ()=>{
          const stories = await faker(20)
-         console.log(stories)
       }
       test()
       // const getStores = await faker(20)

@@ -1,10 +1,5 @@
 import faker from 'faker'
-
-interface FakerObject {
-   avatar: string;
-   username: string;
-   name: string;
-}
+import {FakerObject} from '@/types/interfaces'
 
 export default async (total:number):Promise<FakerObject[]>=>{
    const suggestions = [...Array(total)].map((_, i)=>({
