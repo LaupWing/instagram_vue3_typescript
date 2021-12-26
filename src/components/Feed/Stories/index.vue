@@ -1,10 +1,9 @@
 <template>
    <div className='flex space-x-2 p-6 mt-8 border-gray-200 border rounded-sm overflow-x-scroll bg-white scrollbar-thin scrollbar-thumb-black'>
-      test
-      <!-- <story 
+      <story 
          :img="'https://autototaalbv.nl/wp-content/uploads/2017/04/profile-placeholder.png'"
          :username="'LaupWing'"
-      /> -->
+      />
       <!-- <story
          img={profile.avatar}
          username={profile.username}
@@ -22,11 +21,13 @@ export default defineComponent({
    components:{
       Story
    },
-   async setup() {
-      console.log('rendering')
+   setup() {
       const stories = ref<FakerObject[]>([]) 
-      const data:FakerObject[] = await faker(20)
-      stories.value = data
+      const init = async ()=>{
+         const data:FakerObject[] = await faker(20)
+         stories.value = data
+      }
+      init()
 
       
       // const getStores = await faker(20)
