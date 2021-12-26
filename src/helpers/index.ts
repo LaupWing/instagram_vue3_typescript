@@ -1,12 +1,12 @@
 import faker from 'faker'
 
-type FakerObject  = {
+interface FakerObject {
    avatar: string;
    username: string;
    name: string;
 }
 
-export default async (total:number):Promise<Promise<FakerObject>[]>=>{
+export default async (total:number):Promise<FakerObject[]>=>{
    const suggestions = [...Array(total)].map((_, i)=>({
       ...faker.helpers.contextualCard(),
       id: i
@@ -15,7 +15,8 @@ export default async (total:number):Promise<Promise<FakerObject>[]>=>{
    const images = await fetchImages.json() 
 
    return suggestions.map((suggestion, i)=>({
-      ...suggestion,
+      username:suggestion.username,
+      name:suggestion.name,
       avatar: images.results[i].picture.thumbnail
    }))
 }
