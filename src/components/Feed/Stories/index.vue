@@ -12,11 +12,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
+// import faker from '@/'
 
 export default defineComponent({
    setup() {
-      
+      const stories = ref([])
+
    },
 })
 </script>
