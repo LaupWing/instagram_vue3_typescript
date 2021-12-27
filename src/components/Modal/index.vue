@@ -17,6 +17,7 @@ export default defineComponent({
 		},
 	},
 	mounted() {
+		
 		this.show();
 	},
 	setup() {},
